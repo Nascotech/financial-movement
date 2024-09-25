@@ -3,6 +3,8 @@ import {
   movementSchema,
   updateMovementSchema,
 } from "../validations/movement.schema.js";
+const express = require('express');
+const router = express.Router();
 
 export class MovementController {
   static async getAllMovements(req, res) {
